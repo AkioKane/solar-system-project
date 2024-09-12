@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/AkioKane/solar-system-project#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.0",
+    "loadash": "^1.0.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
