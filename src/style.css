@@ -72,8 +72,10 @@ header h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200px;
+  height: auto;
   text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .p-info {
@@ -83,7 +85,7 @@ header h1 {
 
 .planet-info {
   display: flex;
-  height: 450px;
+  height: auto;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-planets-color);
@@ -92,15 +94,20 @@ header h1 {
 
 .planet-info .items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   height: auto;
-  width: auto;
+  width: 70%;
+  align-items: center;
   gap: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  transition: 0.3s ease-in-out;
 }
 
 .planet-info .items .item {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
