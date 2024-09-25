@@ -6,6 +6,7 @@
 :root {
   --bg-color: black;
   --bg-planets-color: #f1f5f9;
+  --bg-conslusion-color: #020617;
 }
 
 * {
@@ -27,6 +28,11 @@ body {
 .main {
   font-family: "Montserrat";
   transition: all 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 header {
@@ -89,7 +95,8 @@ header h1 {
   justify-content: center;
   align-items: center;
   background-color: var(--bg-planets-color);
-  color: black;
+  background: linear-gradient(var(--bg-color) 28px, var(--bg-conslusion-color) 77%);
+  color: white;
 }
 
 .planet-info .items {
@@ -123,21 +130,24 @@ header h1 {
 }
 
 .conclusion {
-  background-image: url("./images/solar-system-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-conslusion-color);
   width: 100%;
-  height: 800px;
+  min-height: 300px;
+}
+
+.conclusion p {
+  margin: 4em;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  background-color: #1b1b1a;
+  height: 60px;
+  background-color: var(--bg-conslusion-color);
   margin: 0;
   padding: 0;
 }
