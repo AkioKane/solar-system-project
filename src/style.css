@@ -120,8 +120,10 @@ header h1 {
 }
 
 .planet-info .items .item img {
-  height: 100px;
+  height: 125px;
+  width: 125px;
   margin-bottom: 1em;
+  border-radius: 100%;
   transition: all 0.3s ease-in-out;
 }
 
