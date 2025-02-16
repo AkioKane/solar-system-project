@@ -167,3 +167,61 @@ header h1 {
   margin: 0;
   padding: 0;
 }
+
+.description-star-background {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.55;
+  z-index: 10;
+  animation: opacityFlowBackground 0.5s ease-in-out;
+}
+
+
+.description-star {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3 ease-in-out;
+}
+
+.container-describe {
+  width: 50%;
+  min-height: 50%;
+  background-color: #f1f5f9;
+  text-align: justify;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  z-index: 11;
+  animation: opacityFlow 0.5s ease-in-out;
+}
+
+.container-describe * {
+  margin: 30px;
+}
+
+@keyframes opacityFlow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityFlowBackground {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.55;
+  }
+}
